@@ -1,6 +1,49 @@
-<p>dashboard works!</p>
-<app-sidebar></app-sidebar>
-<app-header></app-header>
-<app-news></app-news>
-<app-trending></app-trending>
-<app-watchlist></app-watchlist>
+<body>
+   <!-- Sidebar Module  -->
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-end fixed-start loopple-fixed-start" id="sidenav-main">
+    <app-sidebar></app-sidebar>
+  </aside>
+  <div class="main-content" id="panel">
+    <!-- Header Module  -->
+    <app-header></app-header>
+    <div class="container-fluid pt-3">
+      <!-- News Module  -->
+      <app-news></app-news>
+      <!-- Trending Module  -->
+      <app-trending></app-trending>
+      <!-- Watchlist Module  -->
+      <app-watchlist></app-watchlist>
+    </div>
+
+      <!-- Footer -->
+      <footer class="footer pt-3 pb-4">
+          <div class="container-fluid">
+              <div class="row align-items-center justify-content-lg-between">
+                  <div class="col-lg-6 mb-lg-0 mb-4">
+                      <div class="copyright text-center text-sm text-muted text-lg-start">
+                          © 2021,
+                          made by
+                          <a href="https://www.loopple.com" class="font-weight-bold text-capitalize" target="_blank">Loopple</a>
+                      </div>
+                  </div>
+                  <div class="col-lg-6">
+                      <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                          <li class="nav-item">
+                              <a href="javascript:;" class="nav-link text-muted" target="_blank">Loopple</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="javascript:;" class="nav-link text-muted" target="_blank">About Us</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="javascript:;" class="nav-link text-muted" target="_blank">Blog</a>
+                          </li>
+                          <li class="nav-item">
+                              <a href="javascript:;" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </footer>
+  </div>
+</body>
