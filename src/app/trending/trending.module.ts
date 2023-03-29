@@ -10,6 +10,9 @@ import { TrendingComponent } from './components/trending/trending.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    TrendingComponent
   ]
 })
 export class TrendingModule { }
