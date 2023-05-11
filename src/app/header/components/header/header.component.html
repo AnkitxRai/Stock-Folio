@@ -1,10 +1,12 @@
 <nav class="navbar navbar-main navbar-expand-lg px-0 start-100 position-sticky blur shadow-none top-0 z-index-6" id="navbarTop" navbar-scroll="true">
   <div class="container-fluid py-2 px-5">
       <div class="pe-md-3 d-flex align-items-center">
-          <div class="input-group">
-              <span class="input-group-text border-0 text-body bg-transparent"><i class="fas fa-search" aria-hidden="true"></i></span>
-              <input type="text" class="form-control border-0 bg-transparent" placeholder="Search here...">
-          </div>
+        <div class="input-group">
+          <form class="row no-gutters border-bottom py-2" [formGroup]="form">
+            <span class="input-group-text border-0 text-body bg-transparent"><i class="fas fa-search" aria-hidden="true"></i></span>
+            <input type="text" class="form-control border-0 bg-transparent" (input)="getValue($event)" formControlName="search" placeholder="Search here...">
+          </form>
+        </div>
       </div>
       <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <ul class="navbar-nav ms-auto justify-content-end">
